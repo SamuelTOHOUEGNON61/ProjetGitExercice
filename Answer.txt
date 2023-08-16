@@ -1,0 +1,17 @@
+mkdir ProjetGitExercice
+git init
+New-Item "index.html1"
+git add index.html
+git commit -m "Premier commit : ajout du fichier index.html" index.html
+git branch feature-navbar
+git checkout feature-navbar
+git add index.html
+git commit -m "Ajout de la barre de navigation" index.html
+git checkout master
+git merge feature-navbar
+git branch feature-footer
+git checkout feature-footer
+git add index.html
+git commit -m "Ajout de pied de page" index.html
+git checkout master
+git merge feature-footer
